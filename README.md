@@ -63,6 +63,6 @@ The layout uses **CSS Grid** for the project gallery and **Flexbox** for navigat
 
 ## Screenshots
 
-![Desktop Screenshot](screenshots/desktop.png)
+![Desktop Screenshot](screenshots/desktopss.png)
 
-![Mobile Screenshot](screenshots/mobile.png)
+![Mobile Screenshot](screenshots/mobiless.png)
