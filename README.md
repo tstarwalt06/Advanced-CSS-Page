@@ -7,10 +7,10 @@ A polished, responsive landing page built with HTML, CSS Grid, Flexbox, and Java
 ## Live Site
 
 GitHub Pages Link:  
-PASTE YOUR LINK HERE
+[Page](https://tstarwalt06.github.io/Advanced-CSS-Page/#projects)
 
 Repository Link:  
-PASTE YOUR REPO LINK HERE
+[Repo](https://github.com/tstarwalt06/Advanced-CSS-Page)
 
 ---
 
