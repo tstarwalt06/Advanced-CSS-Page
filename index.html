@@ -1,90 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Landing</title>
+  <title>Advanced CSS Page</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<header class="navbar">
+  <header class="navbar">
+    <div class="logo">Tyler's Portfolio</div>
 
-  <div class="logo">My Portfolio</div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <label class="theme-toggle" aria-label="Dark mode toggle">
+      <input type="checkbox" disabled>
+      <span class="slider"></span>
+    </label>
+  </header>
 
-  <button class="theme-toggle">Theme</button>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Front-End Developer</p>
+        <h1>Modern, polished websites.</h1>
+        <p class="hero-description">
+          Filler text
+        </p>
 
-</header>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
 
+      <div class="hero-card">
+        <h2>Why this page works</h2>
+        <ul>
+          <li>Responsive layout</li>
+          <li>Grid and Flexbox</li>
+          <li>Hover effects and animation</li>
+          <li>Accessible color contrast</li>
+        </ul>
+      </div>
+    </section>
 
-<section class="hero">
+    <section id="projects" class="projects-section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects</h2>
+        <p>These cards are placed in a responsive CSS Grid layout.</p>
+      </div>
 
-  <h1>Advanced CSS Page</h1>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>Filler text</p>
+        </article>
 
-  <p>Creating polished web expierences.</p>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Filler text</p>
+        </article>
 
-  <button class="primary-btn">View Work</button>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>Filler text</p>
+        </article>
 
-</section>
+        <article class="card">
+          <h3>Project Four</h3>
+          <p>Filler text</p>
+        </article>
 
+        <article class="card">
+          <h3>Project Five</h3>
+          <p>Filler text</p>
+        </article>
 
-<section id="projects" class="projects">
+        <article class="card">
+          <h3>Project Six</h3>
+          <p>Filler text</p>
+        </article>
+      </div>
+    </section>
 
-  <div class="card">
-    <h3>Project One</h3>
-    <p>Responsive landing page layout.</p>
-  </div>
+    <section id="about" class="about-section">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Built with strong layout fundamentals</h2>
+      </div>
 
-  <div class="card">
-    <h3>Project Two</h3>
-    <p>Mobile first UI design.</p>
-  </div>
+      <div class="about-flex">
+        <div class="about-box">
+          <h3>Design Focus</h3>
+          <p>Structure, readability, and clean visual balance.</p>
+        </div>
 
-  <div class="card">
-    <h3>Project Three</h3>
-    <p>Interactive UI with animations.</p>
-  </div>
+        <div class="about-box">
+          <h3>Development Focus</h3>
+          <p>Build responsive interfaces that feel polished and professional.</p>
+        </div>
 
-  <div class="card">
-    <h3>Project Four</h3>
-    <p>Accessible user interface.</p>
-  </div>
+        <div class="about-box">
+          <h3>Accessibility Focus</h3>
+          <p>Color contrast is readable and keyboard focus styles are visible.</p>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section id="contact" class="contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact Me!</h2>
+        <p>Email: tstarwalt@lakelandcollege.edu</p>
+      </div>
+    </section>
+  </main>
 
-
-<section id="about" class="about">
-
-  <h2>About Me</h2>
-
-  <p>I focus on clean layout systems using Grid and Flexbox.</p>
-
-</section>
-
-
-<section id="contact" class="contact">
-
-  <h2>Contact</h2>
-
-  <p>Email: example@email.com</p>
-
-</section>
-
-
-<footer>
-
-  <p>© 2026 Portfolio</p>
-
-</footer>
+  <footer class="footer">
+    <p>© 2026 Tyler Portfolio</p>
+  </footer>
 
 </body>
 </html>
