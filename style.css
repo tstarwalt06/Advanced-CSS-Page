@@ -5,18 +5,15 @@
   --primary: #4f46e5;
 }
 
-.dark {
-  --bg: #0f172a;
-  --text: #e5e7eb;
-  --card: #1e293b;
-}
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
 }
+
+
+
 
 .navbar {
   display: flex;
@@ -27,25 +24,26 @@ body {
 }
 
 nav {
-  display: none;
-  flex-direction: column;
-}
-
-nav.open {
   display: flex;
+  gap: 20px;
 }
 
 nav a {
-  padding: 10px;
   text-decoration: none;
   color: var(--text);
 }
+
+
+
 
 .hero {
   padding: 80px 20px;
   text-align: center;
   animation: fade 1s;
 }
+
+
+
 
 .primary-btn {
   padding: 12px 20px;
@@ -59,6 +57,8 @@ nav a {
 .primary-btn:hover {
   transform: scale(1.05);
 }
+
+
 
 .projects {
   display: grid;
@@ -77,70 +77,47 @@ nav a {
   transform: translateY(-5px);
 }
 
+
+
+
 .about,
 .contact {
   padding: 40px;
   text-align: center;
 }
 
+
+/* FOOTER */
 footer {
   padding: 20px;
   text-align: center;
   background: var(--card);
 }
 
+
+
+
 @keyframes fade {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
+
+
+
 @media (min-width: 600px) {
+
   .projects {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
+
 @media (min-width: 900px) {
-
-  nav {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #navToggle {
-    display: none;
-  }
 
   .projects {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-.theme-toggle {
-  width: 56px;
-  height: 30px;
-  background: var(--card);
-  border: 2px solid var(--primary);
-  border-radius: 999px;
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  transition: background 0.3s ease, border-color 0.3s ease;
-}
-
-.toggle-circle {
-  width: 22px;
-  height: 22px;
-  background: var(--primary);
-  border-radius: 50%;
-  position: absolute;
-  left: 3px;
-  transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.dark .toggle-circle {
-  transform: translateX(26px);
-}
-  
 }
